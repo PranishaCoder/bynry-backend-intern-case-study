@@ -1,3 +1,4 @@
+```markdown
 # Bynry Backend Intern – Case Study Submission
 
 This repository contains my completed case study for the **Backend Developer Intern** role at **Bynry Inc**.  
@@ -7,12 +8,15 @@ It includes solutions for **Code Review & Debugging**, **Database Design**, and 
 
 ## 📂 Repository Structure
 
-.
-├── part1_code_fix.py # Fixed API endpoint for product creation
-├── part2_schema.sql # Database schema (DDL) for StockFlow
-├── part3_low_stock_api.py # Low-stock alerts API implementation
-└── Pranisha_Pol_Task.pdf # Documented answers (optional reference)
+```
 
+.
+├── part1\_code\_fix.py         # Fixed API endpoint for product creation
+├── part2\_schema.sql          # Database schema (DDL) for StockFlow
+├── part3\_low\_stock\_api.py    # Low-stock alerts API implementation
+└── Pranisha\_Pol\_Task.pdf     # Documented answers (optional reference)
+
+```
 
 ---
 
@@ -48,16 +52,19 @@ It includes solutions for **Code Review & Debugging**, **Database Design**, and 
 ## ⚙️ Part 3 – Low Stock Alerts API
 
 **File:** `part3_low_stock_api.py`  
-- API endpoint:  
-GET /api/companies/<company_id>/alerts/low-stock
+- **API endpoint:**
+```
 
+GET /api/companies/\<company\_id>/alerts/low-stock
+
+````
 - Features:
 - Low stock threshold per product
 - Alerts only for products with recent sales (last 30 days)
 - Multi-warehouse support
 - Supplier information included for reordering
 - Days until stock-out calculation
-- Handles missing thresholds, zero sales, no suppliers gracefully
+- Handles missing thresholds, zero sales, and no suppliers gracefully
 
 ---
 
@@ -72,28 +79,40 @@ GET /api/companies/<company_id>/alerts/low-stock
 ### 2️⃣ Install dependencies
 ```bash
 pip install flask sqlalchemy
-3️⃣ Run the API
-Add your database configuration in app.py (Flask app initialization).
+````
 
-Run:
+### 3️⃣ Run the API
 
-bash
-Copy
-Edit
+* Add your database configuration in `app.py` (Flask app initialization).
+* Run:
+
+```bash
 flask run
-4️⃣ Test Endpoints
+```
+
+### 4️⃣ Test Endpoints
+
 Use Postman or curl to test:
 
-
+```bash
 curl http://localhost:5000/api/companies/1/alerts/low-stock
-👩‍💻 Author
-Pranisha Dhananjay Pol
+```
 
-BE in Artificial Intelligence & Data Science
+---
 
-Passionate about backend development, data analytics, and scalable API design.
+## 👩‍💻 Author
 
-📌 Notes
-This repo contains both runnable code and the documented approach (Pranisha_Pol_Task.pdf) for reference.
+**Pranisha Dhananjay Pol**
 
-The APIs assume a working database with tables from part2_schema.sql.
+* BE in Artificial Intelligence & Data Science
+* Passionate about backend development, data analytics, and scalable API design.
+
+---
+
+## 📌 Notes
+
+* This repo contains both runnable code and the documented approach (`Pranisha_Pol_Task.pdf`) for reference.
+* The APIs assume a working database with tables from `part2_schema.sql`.
+
+```
+```
